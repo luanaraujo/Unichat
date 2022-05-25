@@ -23,7 +23,7 @@ Route::middleware([
     'verified'
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return view('chat');
     })->name('dashboard');
     Route::get('/chat', function () {
         return view('chat');
