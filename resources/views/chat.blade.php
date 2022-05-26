@@ -1,3 +1,7 @@
+<script>
+    
+</script>
+
 <x-app-layout title="Chat">
     <x-slot name="header">
         <img src="{{ asset('/img/nomeUnichat.png')}}" alt="" style="width: 130px;">
@@ -35,49 +39,49 @@
                         <!--mensagens-->
                         <div class="w-full p-6 flex flex-col overflow-y-scroll">
                             <div class="w-full mb-3 text-right">
-                                <p class="inline-block p-2 rounded-md messageFromMe" style="max-width: 75%;">
+                                <p class="inline-block p-2 rounded-md messageFromMe bg-sky-500" style="max-width: 75%;">
                                     Olá!
                                 </p>
                                 <span class="block mt-1 text-xs text-stone-600">19/05/2022 21:00</span>
                             </div>
 
                             <div class="w-full mb-3">
-                                <p class="inline-block p-2 rounded-md messageToMe" style="max-width: 75%;">
+                                <p class="inline-block p-2 rounded-md messageToMe bg-gray-300" style="max-width: 75%;">
                                     Oi!
                                 </p>
                                 <span class="block mt-1 text-xs text-stone-600">19/05/2022 21:04</span>
                             </div>
 
                             <div class="w-full mb-3 text-right">
-                                <p class="inline-block p-2 rounded-md messageFromMe" style="max-width: 75%;">
+                                <p class="inline-block p-2 rounded-md messageFromMe bg-sky-500" style="max-width: 75%;">
                                     Tudo bem?
                                 </p>
                                 <span class="block mt-1 text-xs text-stone-600">19/05/2022 21:06</span>
                             </div>
 
                             <div class="w-full mb-3">
-                                <p class="inline-block p-2 rounded-md messageToMe" style="max-width: 75%;">
+                                <p class="inline-block p-2 rounded-md messageToMe bg-gray-300" style="max-width: 75%;">
                                     Tudo bem e vc?
                                 </p>
                                 <span class="block mt-1 text-xs text-stone-600">19/05/2022 21:08</span>
                             </div>
 
                             <div class="w-full mb-3">
-                                <p class="inline-block p-2 rounded-md messageToMe" style="max-width: 75%;">
+                                <p class="inline-block p-2 rounded-md messageToMe bg-gray-300" style="max-width: 75%;">
                                     Terminou o trabalho?
                                 </p>
                                 <span class="block mt-1 text-xs text-stone-600">19/05/2022 21:08</span>
                             </div>
 
-                            <div class="w-full mb-3">
-                                <p class="inline-block p-2 rounded-md messageToMe" style="max-width: 75%;">
+                            <div class="w-full mb-3"> 
+                                <p class="inline-block p-2 rounded-md messageToMe bg-gray-300" style="max-width: 75%;">
                                     de matemática
                                 </p>
                                 <span class="block mt-1 text-xs text-stone-600">19/05/2022 21:08</span>
                             </div>
 
                             <div class="w-full mb-3 text-right">
-                                <p class="inline-block p-2 rounded-md messageFromMe" style="max-width: 75%;">
+                                <p class="inline-block p-2 rounded-md messageFromMe bg-sky-500" style="max-width: 75%;">
                                     Terminei sim
                                 </p>
                                 <span class="block mt-1 text-xs text-stone-600">19/05/2022 21:06</span>
@@ -100,4 +104,5 @@
         </div>
     </div>
 </x-app-layout>
+
 
