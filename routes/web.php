@@ -17,15 +17,14 @@ Route::get('/', function () {
     return view('login');
 });
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('chat');
-    })->name('dashboard');
-    Route::get('/chat', function () {
-        return view('chat');
-    })->name('chat');
+Route::middleware(['auth:sanctum', 'verified'])->get('/chat', function () {
+    return view('chat.index');
+});
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource('tasks', \App\Http\Controllers\TasksController::class);
+
+    Route::resource('users', \App\Http\Controllers\UsersController::class);
+
+    Route::resource('chat', \App\Http\Controllers\ChatController::class);
 });
